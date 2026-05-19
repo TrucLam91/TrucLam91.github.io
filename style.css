@@ -523,4 +523,21 @@ ul { list-style: none; }
   .shorts-grid { grid-template-columns: 1fr 1fr; gap: .7rem; }
   .hero-btns { flex-direction: column; align-items: center; }
   .tl-hd { flex-direction: column; }
+   /* Project Achievement */
+.achieve-grid { display: flex; flex-direction: column; gap: .9rem; }
+.achieve-card {
+  display: flex; align-items: center; gap: 1rem;
+  padding: 1.1rem 1.3rem; border-radius: var(--r2);
+  background: var(--white); border: 1px solid var(--border);
+  box-shadow: var(--sh); text-decoration: none; color: inherit;
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+}
+.achieve-card:hover { transform: translateY(-3px); box-shadow: var(--sh2); border-color: var(--g); }
+.achieve-icon { font-size: 1.6rem; flex-shrink: 0; }
+.achieve-body { flex: 1; }
+.achieve-src { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--tx3); }
+.achieve-title { font-size: .9rem; font-weight: 600; color: var(--ink); margin: .2rem 0 .4rem; line-height: 1.4; }
+.achieve-tag { font-size: .72rem; }
+.achieve-arrow { font-size: 1.1rem; color: var(--g-dk); flex-shrink: 0; opacity: .6; transition: opacity .2s, transform .2s; }
+.achieve-card:hover .achieve-arrow { opacity: 1; transform: translateX(4px); }
 }

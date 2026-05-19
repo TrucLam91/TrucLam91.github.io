@@ -523,4 +523,7 @@ ul { list-style: none; }
   .shorts-grid { grid-template-columns: 1fr 1fr; gap: .7rem; }
   .hero-btns { flex-direction: column; align-items: center; }
   .tl-hd { flex-direction: column; }
+   /* Achievement image wrapper — same ratio as pbi-frame */
+.ach-img-wrap { position:relative; padding-bottom:62.25%; height:0; overflow:hidden; background:var(--g-pale); border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
+.ach-img-wrap > * { position:absolute; top:0; left:0; width:100%; height:100%; }
   }

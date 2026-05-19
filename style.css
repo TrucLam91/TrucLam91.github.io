@@ -582,5 +582,7 @@ ul { list-style: none; }
 }
 @media (max-width: 480px) {
   .ach-row { grid-template-columns: 1fr; }
-}
+/* Achievement cards — fix click, no video JS trigger */
+.port-block:last-of-type .short-frame { cursor: pointer !important; }
+.port-block:last-of-type .short-card  { text-decoration: none; color: inherit; }
   }

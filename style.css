@@ -204,7 +204,7 @@ ul { list-style: none; }
 .container { max-width: 1080px; margin: 0 auto; padding: 0 2rem; }
 
 .s-label { font-size: .72rem; letter-spacing: .28em; text-transform: uppercase; font-weight: 700; color: var(--g-dk); margin-bottom: .4rem; }
-.s-label-light { color: var(--g-dk); }
+.s-label-light { color: var(--ink); }
 
 .s-title {
   font-family: 'Bebas Neue', sans-serif;

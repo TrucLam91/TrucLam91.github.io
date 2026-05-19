@@ -525,38 +525,43 @@ ul { list-style: none; }
   .tl-hd { flex-direction: column; }
    /* Project Achievement */
 .achieve-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; }
+
 .achieve-card {
   display: flex; flex-direction: column;
-  border-radius: var(--r2); overflow: hidden;
+  background: var(--white); border-radius: var(--r2);
   border: 1px solid var(--border); box-shadow: var(--sh);
-  text-decoration: none; color: inherit;
+  overflow: hidden; text-decoration: none; color: inherit;
   transition: transform .25s, box-shadow .25s;
-  background: var(--white);
 }
 .achieve-card:hover { transform: translateY(-4px); box-shadow: var(--sh2); }
 
+.achieve-head {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: .9rem 1.1rem; border-bottom: 1px solid var(--border);
+}
+.achieve-head h4 { font-size: .9rem; font-weight: 700; color: var(--ink); }
+.achieve-src-badge {
+  font-size: .7rem; font-weight: 700;
+  background: var(--g-pale); color: var(--g-dk);
+  padding: .2rem .6rem; border-radius: 2rem; white-space: nowrap;
+}
+
 .achieve-thumb {
-  position: relative; height: 160px;
+  width: 100%; height: 200px; overflow: hidden;
   display: flex; align-items: center; justify-content: center;
-  overflow: hidden;
+  flex-shrink: 0;
 }
 .achieve-thumb img {
   width: 100%; height: 100%; object-fit: cover;
   transition: transform .3s;
 }
 .achieve-card:hover .achieve-thumb img { transform: scale(1.04); }
-.achieve-big-icon { font-size: 3.5rem; }
-.achieve-badge {
-  position: absolute; bottom: 8px; left: 10px;
-  background: rgba(0,0,0,.6); color: #fff;
-  font-size: .7rem; font-weight: 600; letter-spacing: .06em;
-  padding: .2rem .6rem; border-radius: 2rem;
-}
+.achieve-inner-text { text-align: center; padding: 1rem; }
 
-.achieve-info { padding: .9rem 1.1rem; }
-.achieve-src { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--tx3); display: block; margin-bottom: .3rem; }
-.achieve-ttl { font-size: .88rem; font-weight: 600; color: var(--ink); line-height: 1.4; margin-bottom: .5rem; }
-.achieve-tag { font-size: .72rem; }
+.achieve-desc {
+  padding: .8rem 1.1rem;
+  font-size: .83rem; color: var(--tx2); line-height: 1.5;
+}
 
 @media (max-width: 600px) {
   .achieve-grid { grid-template-columns: 1fr; }

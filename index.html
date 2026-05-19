@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Truc Lam — Digital Marketing Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ══════════════ NAVBAR ══════════════ -->
+  <nav class="navbar" id="navbar">
+    <a class="nav-brand" href="#hero">TL</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="mailto:lamtruc.ftu@gmail.com" class="nav-cta">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════════════ HERO (compact — half size) ══════════════ -->
+  <section id="hero" class="hero">
+
+    <!-- Pitch stripes -->
+    <div class="pitch-bg"></div>
+
+    <!-- SVG field lines -->
+    <svg class="field-lines" viewBox="0 0 1400 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <line x1="700" y1="0" x2="700" y2="560" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+      <circle cx="700" cy="280" r="130" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+      <circle cx="700" cy="280" r="4" fill="rgba(255,255,255,0.3)"/>
+      <rect x="0" y="150" width="120" height="260" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="1.5"/>
+      <rect x="1280" y="150" width="120" height="260" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="1.5"/>
+      <rect x="0" y="220" width="44" height="120" fill="none" stroke="rgba(255,255,255,0.11)" stroke-width="1.5"/>
+      <rect x="1356" y="220" width="44" height="120" fill="none" stroke="rgba(255,255,255,0.11)" stroke-width="1.5"/>
+      <line x1="0" y1="28" x2="1400" y2="28" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+      <line x1="0" y1="532" x2="1400" y2="532" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+      <path d="M0,28 Q28,28 28,56" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="1.5"/>
+      <path d="M1400,28 Q1372,28 1372,56" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="1.5"/>
+      <path d="M0,532 Q28,532 28,504" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="1.5"/>
+      <path d="M1400,532 Q1372,532 1372,504" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="1.5"/>
+    </svg>
+
+    <!-- Hero content -->
+    <div class="hero-content">
+      <span class="hero-chip">Digital Marketing · Social Media · SEA</span>
+
+      <h1 class="hero-name">
+        Truc Lam
+        <span class="hero-aka">aka Nhi Lam</span>
+      </h1>
+
+      <p class="hero-tagline">
+        10 years marketing &amp; digital marketing experiences<br/>
+        in Technology &amp; Gaming industry
+      </p>
+
+      <div class="hero-meta">
+        <a href="https://www.linkedin.com/in/lamnhi0410/" target="_blank" rel="noopener" class="hero-meta-link"><i class="fab fa-linkedin"></i> lamnhi0410</a>
+        <a href="mailto:lamtruc.ftu@gmail.com" class="hero-meta-link"><i class="fas fa-envelope"></i> lamtruc.ftu@gmail.com</a>
+        <span>⚽ Football &amp; Esport Fan</span>
+      </div>
+
+      <div class="hero-btns">
+        <a href="#about" class="btn-green">View Profile</a>
+        <a href="#experience" class="btn-ghost">My Experience</a>
+        <a href="#portfolio" class="btn-ghost">See My Work</a>
+      </div>
+    </div>
+
+    <!-- Floating footballs -->
+    <span class="ball b1">⚽</span>
+    <span class="ball b2">⚽</span>
+    <span class="ball b3">⚽</span>
+
+    <a href="#about" class="scroll-arrow" aria-label="Scroll down">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ══════════════ SECTION 1 — ABOUT ══════════════ -->
+  <section id="about" class="section s-white">
+    <div class="container">
+      <p class="s-label">01 — About Me</p>
+
+      <div class="about-wrap">
+
+        <!-- LEFT -->
+        <aside class="about-left">
+          <!-- Avatar -->
+          <div class="avatar-ring">
+            <div class="avatar-inner">
+              <img src="assets/avatar.jpg" alt="Truc Lam"/>
+              <!-- Replace with: <img src="assets/avatar.jpg" alt="Truc Lam"/> -->
+            </div>
+          </div>
+
+          <!-- Contact -->
+          <div class="info-card">
+            <a href="mailto:lamtruc.ftu@gmail.com" class="ic-row">
+              <i class="fas fa-envelope ic-green"></i>
+              <span>lamtruc.ftu@gmail.com</span>
+            </a>
+            <div class="ic-row">
+              <i class="fas fa-phone ic-yellow"></i>
+              <span>+84 902 502 155</span>
+            </div>
+            <a href="https://linkedin.com/in/lamnhi0410" target="_blank" class="ic-row">
+              <i class="fab fa-linkedin ic-blue"></i>
+              <span>linkedin.com/in/lamnhi0410</span>
+            </a>
+            <div class="ic-row">
+              <i class="fas fa-map-marker-alt ic-green"></i>
+              <span>Ho Chi Minh City, Vietnam</span>
+            </div>
+          </div>
+
+          <!-- Fun facts -->
+          <div class="fun-card">
+            <p class="fun-ttl">⚽ Beyond the Screen</p>
+            <ul>
+              <li>🏀 Hoop &amp; jogging</li>
+              <li>🏃 Top 16 VNGG Female — Uprace 2025</li>
+              <li>⚽ World Cup &amp; League of Legends fan</li>
+              <li>🍳 Cooking &amp; Baking</li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- RIGHT -->
+        <div class="about-right">
+
+          <!-- Summary -->
+          <div class="summary">
+            <p>MSc in Business Project Management (Distinction · LSBU 2024), MBA with Brand Communication (Stamford 2023). <strong>10 years</strong> in Technology &amp; Gaming across Vietnam and Southeast Asia. Results-driven with resiliency, creative thinking, AI integration, and a data-driven approach that generates measurable growth.</p>
+          </div>
+
+          <!-- Education -->
+          <div class="block">
+            <h3 class="blk-title"><span class="blk-ic ic-bg-green"><i class="fas fa-graduation-cap"></i></span> Education</h3>
+            <div class="edu-list">
+              <div class="edu-row y-row">
+                <div class="edu-body">
+                  <strong>MSc in Business Project Management</strong>
+                  <span>London South Bank University, UK</span>
+                  <small>2023 – 2024</small>
+                </div>
+                <span class="badge b-gold">Distinction</span>
+              </div>
+              <div class="edu-row b-row">
+                <div class="edu-body">
+                  <strong>MBA with Brand Communication</strong>
+                  <span>Stamford International University, Bangkok</span>
+                  <small>2019 – 2023</small>
+                </div>
+                <span class="badge b-blue">Excellent</span>
+              </div>
+              <div class="edu-row g-row">
+                <div class="edu-body">
+                  <strong>BSc in International Business Administration</strong>
+                  <span>Foreign Trade University, Ho Chi Minh City</span>
+                  <small>2009 – 2013</small>
+                </div>
+                <span class="badge b-green">Very Good</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Languages -->
+          <div class="block">
+            <h3 class="blk-title"><span class="blk-ic ic-bg-blue"><i class="fas fa-globe"></i></span> Languages</h3>
+            <div class="lang-list" id="langList">
+              <div class="lang-row">
+                <span class="ln">Vietnamese</span>
+                <div class="track"><div class="fill f-green" data-w="100"></div></div>
+                <span class="lv">Native</span>
+              </div>
+              <div class="lang-row">
+                <span class="ln">English</span>
+                <div class="track"><div class="fill f-blue" data-w="90"></div></div>
+                <span class="lv">Fluent</span>
+              </div>
+              <div class="lang-row">
+                <span class="ln">Deutsch</span>
+                <div class="track"><div class="fill f-yellow" data-w="20"></div></div>
+                <span class="lv">A2 · Growing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div class="block">
+            <h3 class="blk-title"><span class="blk-ic ic-bg-yellow"><i class="fas fa-bolt"></i></span> Core Skills</h3>
+            <div class="skill-wrap">
+              <div class="sg green-sg">
+                <p class="sg-lbl">Digital Marketing</p>
+                <div class="sg-tags"><span>UAC / App Campaigns</span><span>PPC</span><span>ASA</span><span>A/B Testing</span><span>Re-targeting</span><span>Programmatic</span></div>
+              </div>
+              <div class="sg blue-sg">
+                <p class="sg-lbl">Content &amp; Creative</p>
+                <div class="sg-tags"><span>Short-Form Video</span><span>CapCut</span><span>Creative Brief</span><span>Creative Strategy</span></div>
+              </div>
+              <div class="sg yellow-sg">
+                <p class="sg-lbl">Data &amp; Analytics</p>
+                <div class="sg-tags"><span>Power BI</span><span>Google Analytics</span><span>Appsflyer</span><span>Facebook Analytics</span></div>
+              </div>
+              <div class="sg green-sg">
+                <p class="sg-lbl">AI Tools</p>
+                <div class="sg-tags"><span>Claude</span><span>ChatGPT</span><span>Gemini</span><span>NotebookLM</span></div>
+              </div>
+              <div class="sg blue-sg">
+                <p class="sg-lbl">Project Management</p>
+                <div class="sg-tags"><span>Agile Method</span><span>Cross-functional Teams</span><span>SEA Markets</span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SECTION 2 — EXPERIENCE ══════════════ -->
+  <section id="experience" class="section s-field">
+    <div class="field-stripes"></div>
+    <div class="container rel">
+      <p class="s-label s-label-light">02 — Work Experience</p>
+      <h2 class="s-title">10 Years on the Field</h2>
+
+      <!-- TIMELINE — all items visible by default, JS adds entrance animation -->
+      <div class="tl">
+
+        <div class="tl-item">
+          <div class="tl-mark"><div class="tl-dot"></div><div class="tl-stem"></div></div>
+          <div class="tl-card">
+            <div class="tl-hd">
+              <div>
+                <h3>Associate Marketing Manager</h3>
+                <p class="tl-co"><i class="fas fa-building"></i> VNG Corporation – Game Studio SEA</p>
+              </div>
+              <span class="tl-date green-date">Mar 2025 – Mar 2026</span>
+            </div>
+            <p class="tl-proj">Lineage2M (MMORPG) · Samkok Fantasy · Total Football</p>
+            <ul class="tl-list">
+              <li>Led Digital team across SEA (TH, ID, PH, VN) — Performance Marketing &amp; UA Creative</li>
+              <li><strong>Lineage2M</strong> hit <em class="hl hl-g">1M downloads in Week 1</em> with ~300% ROAS</li>
+              <li><strong>Total Football</strong> reached <em class="hl hl-b">2.5× Alpha Test targets</em> in Thailand &amp; Indonesia</li>
+              <li>Key platform partnerships: Google, Meta, TikTok, Apple, Appsflyer</li>
+            </ul>
+            <div class="tl-chips"><span>Google</span><span>Meta</span><span>TikTok</span><span>Apple</span><span>Appsflyer</span><span>SEA</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-mark"><div class="tl-dot"></div><div class="tl-stem"></div></div>
+          <div class="tl-card">
+            <div class="tl-hd">
+              <div>
+                <h3>Digital Marketing Freelancer</h3>
+                <p class="tl-co"><i class="fas fa-robot"></i> CasTalk AI App</p>
+              </div>
+              <span class="tl-date yellow-date">Jan 2025 – Mar 2025</span>
+            </div>
+            <ul class="tl-list">
+              <li>Planned Fake Door Test social campaigns to identify winning content angles for the Japanese market</li>
+              <li>Delivered creative performance analysis &amp; digital landscape reports for AI product strategy</li>
+            </ul>
+            <div class="tl-chips"><span>AI Products</span><span>Japanese Market</span><span>Content Strategy</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-mark"><div class="tl-dot"></div><div class="tl-stem"></div></div>
+          <div class="tl-card">
+            <div class="tl-hd">
+              <div>
+                <h3>Associate Marketing Manager</h3>
+                <p class="tl-co"><i class="fas fa-building"></i> VNG Corporation – Game Studio 1</p>
+              </div>
+              <span class="tl-date blue-date">2021 – Jul 2023</span>
+            </div>
+            <p class="tl-proj">Võ Lâm Truyền Kỳ 1 Mobile · Kiếm Thế Origin · Võ Lâm MAX</p>
+            <ul class="tl-list">
+              <li>Full-funnel performance marketing (UAC, Display, Programmatic, ASO, A/B testing) — <em class="hl hl-y">~$500K monthly budget</em></li>
+              <li>Achieved <em class="hl hl-g">25% market share</em> in mobile MMORPGs; <em class="hl hl-g">1M downloads</em> in first month</li>
+              <li>Reduced manual report time by <em class="hl hl-b">70%</em> · Increased marketing performance visibility by <em class="hl hl-b">50%</em></li>
+            </ul>
+            <div class="tl-chips"><span>UAC</span><span>Programmatic</span><span>ASO</span><span>Power BI</span><span>$500K Budget</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-mark"><div class="tl-dot"></div><div class="tl-stem"></div></div>
+          <div class="tl-card">
+            <div class="tl-hd">
+              <div>
+                <h3>Marketing Specialist</h3>
+                <p class="tl-co"><i class="fas fa-building"></i> VNG Corporation – Game Studio 1</p>
+              </div>
+              <span class="tl-date green-date">2018 – 2021</span>
+            </div>
+            <p class="tl-proj">Võ Lâm Truyền Kỳ Mobile · Perfect World</p>
+            <ul class="tl-list">
+              <li>Built UA team from scratch → <em class="hl hl-g">90% of mobile launches hit financial KPIs</em></li>
+              <li>First in-house implementation of target-on-action bidding &amp; retargeting at VNGGAMES</li>
+            </ul>
+            <div class="tl-chips"><span>UA Team Lead</span><span>Retargeting</span><span>Performance Marketing</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-mark"><div class="tl-dot"></div><div class="tl-stem"></div></div>
+          <div class="tl-card">
+            <div class="tl-hd">
+              <div>
+                <h3>Senior Marketing Executive</h3>
+                <p class="tl-co"><i class="fas fa-fire"></i> Garena Vietnam (SEA Group)</p>
+              </div>
+              <span class="tl-date yellow-date">2016 – 2018</span>
+            </div>
+            <p class="tl-proj">Free Fire · Blade &amp; Soul · Chiến Dịch Huyền Thoại (FPS)</p>
+            <ul class="tl-list">
+              <li>Launched <strong>Chiến Dịch Huyền Thoại</strong> to <em class="hl hl-y">#1 FPS Mobile Game in Vietnam</em> (2016)</li>
+              <li>Grew Free Fire's market share vs. key competitors in the Survival Games category</li>
+              <li>Planned online marketing campaigns on Facebook, Google, and local ad agencies</li>
+            </ul>
+            <div class="tl-chips"><span>Facebook Ads</span><span>Google Ads</span><span>Brand Marketing</span><span>Mobile Games</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-mark"><div class="tl-dot"></div><div class="tl-stem"></div></div>
+          <div class="tl-card">
+            <div class="tl-hd">
+              <div>
+                <h3>Management Associate</h3>
+                <p class="tl-co"><i class="fas fa-fire"></i> Garena Vietnam (SEA Group)</p>
+              </div>
+              <span class="tl-date blue-date">2015 – 2016</span>
+            </div>
+            <ul class="tl-list">
+              <li>Rotated across HR, Commerce, Community &amp; Gaming — <em class="hl hl-b">100% project completion rate</em></li>
+            </ul>
+            <div class="tl-chips"><span>Management Trainee</span><span>Cross-functional</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-mark"><div class="tl-dot"></div></div>
+          <div class="tl-card">
+            <div class="tl-hd">
+              <div>
+                <h3>Customer Service Executive</h3>
+                <p class="tl-co"><i class="fas fa-phone"></i> Mobifone</p>
+              </div>
+              <span class="tl-date green-date">Earlier Career</span>
+            </div>
+            <ul class="tl-list">
+              <li>Planned promotional campaigns for business customers</li>
+              <li>Executed internal marketing communication campaigns</li>
+            </ul>
+            <div class="tl-chips"><span>B2B Marketing</span><span>Internal Comms</span></div>
+          </div>
+        </div>
+
+      </div><!-- /tl -->
+    </div>
+  </section>
+
+  <!-- ══════════════ SECTION 3 — PORTFOLIO ══════════════ -->
+  <section id="portfolio" class="section s-white">
+    <div class="container">
+      <p class="s-label">03 — Portfolio</p>
+      <h2 class="s-title s-title-dark">Work Showcase</h2>
+
+      <!-- YOUTUBE SHORTS -->
+      <div class="port-block">
+        <div class="port-hd">
+          <span class="port-ico yt-ico"><i class="fab fa-youtube"></i></span>
+          <div>
+            <h3>Campaign Demo Clips</h3>
+            <p>Short-form video content &amp; campaign highlights from real projects</p>
+          </div>
+        </div>
+        <!-- 4 shorts — portrait 9:16, facade click-to-play -->
+        <div class="shorts-grid">
+
+          <div class="short-card">
+            <div class="short-frame" data-vid="aUqLuUmfFkw">
+              <img src="https://i.ytimg.com/vi/aUqLuUmfFkw/hqdefault.jpg" alt="Short Introduction about ME" class="yt-thumb"/>
+              <button class="yt-play" aria-label="Play"><span>▶</span></button>
+            </div>
+            <div class="short-info">
+              <span class="stag g-tag">Short Introduction about ME</span>
+              <p>Channel: Lâm Nhi</p>
+            </div>
+          </div>
+
+          <div class="short-card">
+            <div class="short-frame" data-vid="vUI3maLzbz0">
+              <img src="https://i.ytimg.com/vi/vUI3maLzbz0/hqdefault.jpg" alt="How to find Bonu Vnese Banh Mi Shop" class="yt-thumb"/>
+              <button class="yt-play" aria-label="Play"><span>▶</span></button>
+            </div>
+            <div class="short-info">
+              <span class="stag b-tag">How to find Bonu Vnese Banh Mi Shop</span>
+              <p>Channel: Lâm Nhi</p>
+            </div>
+          </div>
+
+          <div class="short-card">
+            <div class="short-frame" data-vid="c6Ko4IdGms0">
+              <img src="https://i.ytimg.com/vi/c6Ko4IdGms0/hqdefault.jpg" alt="Glam Touch - Kpop Store for Beauty" class="yt-thumb"/>
+              <button class="yt-play" aria-label="Play"><span>▶</span></button>
+            </div>
+            <div class="short-info">
+              <span class="stag y-tag">Glam Touch - Kpop Store for Beauty</span>
+              <p>Channel: Lâm Nhi</p>
+            </div>
+          </div>
+
+          <div class="short-card">
+            <div class="short-frame" data-vid="P7w_N3gTsw4">
+              <img src="https://i.ytimg.com/vi/P7w_N3gTsw4/hqdefault.jpg" alt="LSBU" class="yt-thumb"/>
+              <button class="yt-play" aria-label="Play"><span>▶</span></button>
+            </div>
+            <div class="short-info">
+              <span class="stag g-tag">LSBU</span>
+              <p>Channel: Lâm Nhi</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- POWER BI DASHBOARDS -->
+      <div class="port-block">
+        <div class="port-hd">
+          <span class="port-ico pbi-ico"><i class="fas fa-chart-bar"></i></span>
+          <div>
+            <h3>Data Dashboards</h3>
+            <p>Power BI reports for performance tracking &amp; business intelligence</p>
+          </div>
+        </div>
+        <div class="dash-grid">
+
+          <div class="dash-card">
+            <div class="dash-hd">
+              <h4>Coffee Sales</h4>
+              <span class="live-dot">● Live</span>
+            </div>
+            <div class="pbi-frame">
+              <iframe title="Coffee Sales Final"
+                src="https://app.powerbi.com/view?r=eyJrIjoiZGJiMWIyMDAtNWQxNC00YzkzLTg3MGMtYTYzMzU0NWI1NTVlIiwidCI6ImNiNDg0NDZlLTkwZTYtNGJmMS04MjViLTQwZTQ4ZmNjOWZmNiJ9"
+                frameborder="0" allowFullScreen="true" loading="lazy"></iframe>
+            </div>
+            <p class="dash-desc">Sales performance &amp; revenue analytics dashboard</p>
+          </div>
+
+          <div class="dash-card">
+            <div class="dash-hd">
+              <h4>GSSEA UpRace</h4>
+              <span class="live-dot">● Live</span>
+            </div>
+            <div class="pbi-frame">
+              <iframe title="GSSEA_UpRace"
+                src="https://app.powerbi.com/view?r=eyJrIjoiYTA4MGIyNDQtZWI1Mi00YzlkLTkzZjMtOTQ3ODRiYzdkOGY0IiwidCI6ImNiNDg0NDZlLTkwZTYtNGJmMS04MjViLTQwZTQ4ZmNjOWZmNiJ9"
+                frameborder="0" allowFullScreen="true" loading="lazy"></iframe>
+            </div>
+            <p class="dash-desc">Game Studio SEA · Uprace 2025 performance tracker</p>
+          </div>
+
+          <div class="dash-card">
+            <div class="dash-hd">
+              <h4>Capstone Project</h4>
+              <span class="live-dot">● Live</span>
+            </div>
+            <div class="pbi-frame">
+              <iframe title="Capstone Project"
+                src="https://app.powerbi.com/view?r=eyJrIjoiODM3ZTE4MDMtMzI3YS00Yjc0LWJjNTYtNmZlZmUwZjA0MjdmIiwidCI6ImNiNDg0NDZlLTkwZTYtNGJmMS04MjViLTQwZTQ4ZmNjOWZmNiJ9"
+                frameborder="0" allowFullScreen="true" loading="lazy"></iframe>
+            </div>
+            <p class="dash-desc">MSc BPM capstone — strategic business analysis</p>
+          </div>
+
+          <div class="dash-card">
+            <div class="dash-hd">
+              <h4>CheerCast · Creative Performance</h4>
+              <span class="live-dot">● Live</span>
+            </div>
+            <div class="pbi-frame">
+              <iframe title="CheerCast_Creative Performance"
+                src="https://app.powerbi.com/view?r=eyJrIjoiNjZjN2U5ODUtMmNhZi00MDAzLTlhZTAtOWYzN2JjNmM5MGQ5IiwidCI6ImNiNDg0NDZlLTkwZTYtNGJmMS04MjViLTQwZTQ4ZmNjOWZmNiJ9"
+                frameborder="0" allowFullScreen="true" loading="lazy"></iframe>
+            </div>
+            <p class="dash-desc">Creative analytics — CTR, engagement, A/B results</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="footer-pitch"></div>
+    <div class="footer-body">
+      <p class="thanks-txt">Thanks For Reading!</p>
+      <p class="footer-sub">Truc Lam · aka Nhi Lam</p>
+      <div class="footer-icons">
+        <a href="mailto:lamtruc.ftu@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://linkedin.com/in/lamnhi0410" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

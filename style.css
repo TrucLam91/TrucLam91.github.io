@@ -565,4 +565,19 @@ ul { list-style: none; }
 
 @media (max-width: 600px) {
   .achieve-grid { grid-template-columns: 1fr; }
+   /* FORCE ACHIEVE GRID FIX */
+.achieve-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 1.4rem !important;
+}
+.achieve-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+}
+.achieve-thumb {
+  width: 100% !important;
+  height: 200px !important;
+  overflow: hidden !important;
 }

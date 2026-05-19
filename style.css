@@ -528,4 +528,7 @@ ul { list-style: none; }
 .ach-img-wrap > * { position:absolute; top:0; left:0; width:100%; height:100%; }
    /* Achievement — 4 cards 1 hàng ngang */
 .port-block:last-child .dash-grid { grid-template-columns: repeat(4, 1fr) !important; }
+   #achieve-row {
+  grid-template-columns: repeat(4, 1fr) !important;
+}
   }

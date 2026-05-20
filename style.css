@@ -616,4 +616,24 @@ ul { list-style: none; }
 .f-green  { --target-w: 100%; animation: fillBar 1.4s ease forwards; animation-delay: .3s; }
 .f-blue   { --target-w: 90%;  animation: fillBar 1.4s ease forwards; animation-delay: .5s; }
 .f-yellow { --target-w: 20%;  animation: fillBar 1.4s ease forwards; animation-delay: .7s; }
+/* Language bar animation — hard reset + fill */
+.lang-fill {
+  width: 0 !important;
+}
+.f-green  {
+  animation: fillBar 1.4s ease .3s forwards !important;
+  --target-w: 100%;
+}
+.f-blue   {
+  animation: fillBar 1.4s ease .5s forwards !important;
+  --target-w: 90%;
+}
+.f-yellow {
+  animation: fillBar 1.4s ease .7s forwards !important;
+  --target-w: 35%;
+}
+@keyframes fillBar {
+  from { width: 0 !important; }
+  to   { width: var(--target-w) !important; }
+}
   }

@@ -53,18 +53,12 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-// ── Language bars — animate fill when visible ──
-const langList = document.getElementById('langList');
-if (langList) {
-  window.addEventListener('load', () => {
-    document.querySelectorAll('.fill').forEach(bar => {
-      const w = bar.dataset.w + '%';
-      bar.style.width = '0%';
-      bar.style.transition = 'width 1.3s cubic-bezier(.4,0,.2,1)';
-      setTimeout(() => { bar.style.width = w; }, 400);
-    });
-  });
-}
+// ── Language bars ──
+setTimeout(() => {
+  document.querySelector('.f-green')  && (document.querySelector('.f-green').style.width  = '100%');
+  document.querySelector('.f-blue')   && (document.querySelector('.f-blue').style.width   = '90%');
+  document.querySelector('.f-yellow') && (document.querySelector('.f-yellow').style.width = '20%');
+}, 600);
 
 // ── Active nav link highlight ──
 const sections = document.querySelectorAll('section[id]');

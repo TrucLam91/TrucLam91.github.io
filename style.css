@@ -587,4 +587,7 @@ ul { list-style: none; }
 .port-block:last-of-type .short-card  { text-decoration: none; color: inherit; }
    /* Summary box justify */
 .summary { text-align: justify; }
+   /* Ẩn TL brand và hamburger icon */
+.nav-brand { display: none !important; }
+.nav-toggle { display: none !important; }
   }

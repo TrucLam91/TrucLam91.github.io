@@ -608,4 +608,12 @@ ul { list-style: none; }
 .ref-box li strong { color: var(--ink); }
 .ref-box li a { color: #2060a0; }
 .ref-box li a:hover { text-decoration: underline; }
+   /* Language bars — CSS animation fix */
+@keyframes fillBar {
+  from { width: 0; }
+  to   { width: var(--target-w); }
+}
+.f-green  { --target-w: 100%; animation: fillBar 1.4s ease forwards; animation-delay: .3s; }
+.f-blue   { --target-w: 90%;  animation: fillBar 1.4s ease forwards; animation-delay: .5s; }
+.f-yellow { --target-w: 20%;  animation: fillBar 1.4s ease forwards; animation-delay: .7s; }
   }

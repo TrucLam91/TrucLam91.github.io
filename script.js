@@ -57,7 +57,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 const langList = document.getElementById('langList');
 if (langList) {
   window.addEventListener('load', () => {
-    document.querySelectorAll('.lang-fill').forEach(bar => {
+    document.querySelectorAll('.fill').forEach(bar => {
       const w = bar.dataset.w + '%';
       bar.style.width = '0%';
       bar.style.transition = 'width 1.3s cubic-bezier(.4,0,.2,1)';

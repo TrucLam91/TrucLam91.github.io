@@ -622,4 +622,32 @@ div.ref-card {
   border-radius: var(--r2) !important;
   padding: 1rem 1.1rem !important;
 }
+   /* References box — brand new class */
+.references-box {
+  background: #edf5fd !important;
+  border: 1px solid #bbd5f0 !important;
+  border-radius: 16px !important;
+  padding: 1rem 1.1rem !important;
+}
+.references-box .fun-ttl {
+  font-weight: 700 !important;
+  font-size: .84rem !important;
+  color: #1a2e1a !important;
+  margin-bottom: .6rem !important;
+}
+.references-box .ref-item {
+  padding: .45rem 0 !important;
+  border-bottom: 1px solid #bbd5f0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: .1rem !important;
+}
+.references-box .ref-item:last-child {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+}
+.references-box .ref-item strong { font-size: .82rem !important; color: #1a2e1a !important; }
+.references-box .ref-item span   { font-size: .81rem !important; color: #5a6e5a !important; }
+.references-box .ref-item a      { font-size: .80rem !important; color: #2060a0 !important; }
+.references-box .ref-item a:hover { text-decoration: underline !important; }
   }

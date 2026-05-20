@@ -292,9 +292,13 @@ ul { list-style: none; }
 .ln { min-width: 82px; font-weight: 500; font-size: .88rem; }
 .track { flex: 1; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
 .fill { height: 100%; width: 0; border-radius: 4px; transition: width 1.3s cubic-bezier(.4,0,.2,1); }
-.f-green  { background: linear-gradient(90deg, var(--g), var(--g-dk));transition: width 1.3s ease; }
-.f-blue   { background: linear-gradient(90deg, var(--b), var(--b-dk));transition: width 1.3s ease; }
-.f-yellow { background: linear-gradient(90deg, var(--y), var(--y-dk));transition: width 1.3s ease; }
+.f-green  { background: linear-gradient(90deg, var(--g), var(--g-dk)); animation: grow-green  1.4s ease .3s both; }
+.f-blue   { background: linear-gradient(90deg, var(--b), var(--b-dk)); animation: grow-blue   1.4s ease .5s both; }
+.f-yellow { background: linear-gradient(90deg, var(--y), var(--y-dk)); animation: grow-yellow 1.4s ease .7s both; }
+
+@keyframes grow-green  { from { width: 0; } to { width: 100%; } }
+@keyframes grow-blue   { from { width: 0; } to { width: 90%;  } }
+@keyframes grow-yellow { from { width: 0; } to { width: 30%;  } }
 .lv { min-width: 85px; font-size: .77rem; color: var(--tx3); text-align: right; }
 
 /* Skills */

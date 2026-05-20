@@ -53,12 +53,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-// ── Language bars ──
-setTimeout(() => {
-  document.querySelector('.f-green')  && (document.querySelector('.f-green').style.width  = '100%');
-  document.querySelector('.f-blue')   && (document.querySelector('.f-blue').style.width   = '90%');
-  document.querySelector('.f-yellow') && (document.querySelector('.f-yellow').style.width = '20%');
-}, 600);
+// Language bars handled by CSS animation
 
 // ── Active nav link highlight ──
 const sections = document.querySelectorAll('section[id]');

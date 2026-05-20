@@ -590,4 +590,22 @@ ul { list-style: none; }
    /* Ẩn TL brand và hamburger icon */
 .nav-brand { display: none !important; }
 .nav-toggle { display: none !important; }
+   /* References — y chang fun-card, viền xanh dương */
+.ref-box {
+  background: #edf5fd;
+  border: 1px solid #bbd5f0;
+  border-radius: 16px;
+  padding: 1rem;
+}
+.ref-box .fun-ttl {
+  font-weight: 700;
+  font-size: .84rem;
+  color: var(--ink2);
+  margin-bottom: .5rem;
+}
+.ref-box ul { list-style: none; display: flex; flex-direction: column; gap: .6rem; }
+.ref-box li { font-size: .81rem; color: var(--tx2); line-height: 1.6; }
+.ref-box li strong { color: var(--ink); }
+.ref-box li a { color: #2060a0; }
+.ref-box li a:hover { text-decoration: underline; }
   }

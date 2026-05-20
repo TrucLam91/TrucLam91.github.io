@@ -56,21 +56,14 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 // ── Language bars — animate fill when visible ──
 const langList = document.getElementById('langList');
 if (langList) {
-  let animated = false;
-  const langObs = new IntersectionObserver(([entry]) => {
-    if (entry.isIntersecting && !animated) {
-      animated = true;
-      langList.querySelectorAll('.fill').forEach(bar => {
-        const w = bar.dataset.w + '%';
-        bar.style.width = '0';
-        requestAnimationFrame(() =>
-          requestAnimationFrame(() => { bar.style.width = w; })
-        );
-      });
-      langObs.unobserve(langList);
-    }
-  }, { threshold: 0.4 });
-  langObs.observe(langList);
+  window.addEventListener('load', () => {
+    document.querySelectorAll('.lang-fill').forEach(bar => {
+      const w = bar.dataset.w + '%';
+      bar.style.width = '0%';
+      bar.style.transition = 'width 1.3s cubic-bezier(.4,0,.2,1)';
+      setTimeout(() => { bar.style.width = w; }, 400);
+    });
+  });
 }
 
 // ── Active nav link highlight ──

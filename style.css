@@ -389,7 +389,7 @@ ul { list-style: none; }
 .pbi-ico { background: var(--y-pale); color: var(--y-dk); }
 
 /* YouTube Shorts — portrait 9:16 */
-.shorts-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.1rem; }
+.shorts-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.1rem; row-gap: 1.5rem; }
 .short-card { background: var(--white); border-radius: var(--r2); overflow: hidden; border: 1px solid var(--border); box-shadow: var(--sh); transition: transform .25s, box-shadow .25s; }
 .short-card:hover { transform: translateY(-5px); box-shadow: var(--sh2); }
 
